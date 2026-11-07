@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PAGE TITLE: This is the text shown on the browser tab. Change it if you like. -->
+  <title>Ghala Al-matrafi | Software Engineering Student</title>
+
+  <!-- PAGE DESCRIPTION: Shown by search engines. Replace with one sentence about you. -->
+  <meta name="description" content="[Replace: one-sentence description of you and your portfolio]">
+
+  <!-- Connects the CSS file. Keep style.css in the SAME folder as this file. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION BAR
+       - Stays at the top of the page and links to every section.
+       - Each href (like "#about") must match the id of a section below.
+         If you rename a section id, update the link here too.
+       - The button with class "nav-toggle" is the mobile menu button
+         (it only shows on small screens; script.js controls it).
+       ============================================================ -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+
+      <!-- LOGO / NAME: Replace with your name, initials, or a logo image. -->
+      <a href="#home" class="logo">Ghala Moh.</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+
+      <!-- NAV LINKS: Add or remove <li> items if you add or remove sections. -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION (HOME)
+         - The first thing visitors see. Keep it short and clear.
+         - Name and title are already filled in. Edit them if needed.
+         ============================================================ -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+
+        <div class="hero-text">
+          <h1>Ghala Moh.</h1>
+          <p class="hero-title">Software Engineering Student</p>
+
+          <!-- SHORT INTRODUCTION: Replace with 1-2 sentences about what you
+               study and what you enjoy building. -->
+          <p class="hero-intro">[Replace this: write a short introduction about yourself in 1-2 sentences.]</p>
+
+          <!-- BUTTONS: These scroll to the Projects and Contact sections.
+               Change the button text if you want, but keep the href values. -->
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- PROFILE IMAGE PLACEHOLDER:
+             1. Put your photo or illustration in the same folder as this file
+                (for example: profile.jpg).
+             2. Delete the <div class="image-placeholder"> line below.
+             3. Remove the comment marks around the <img> line and set the file name.
+             <img src="profile.jpg" alt="Photo of Ghala Moh." class="profile-image">
+        -->
+        <div class="hero-image">
+          <div class="image-placeholder profile-placeholder">Profile image</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         ABOUT ME SECTION
+         - Lets visitors get to know you.
+         - Replace each bracketed placeholder with your own text.
+         ============================================================ -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-grid">
+
+          <!-- PERSONAL INTRODUCTION: Write about who you are and why you chose software engineering. -->
+          <article class="about-block">
+            <h3>Who I Am</h3>
+            <p>[Replace this: write a short personal introduction.]</p>
+          </article>
+
+          <!-- EDUCATIONAL BACKGROUND: A short summary only. Details go in the Education section below. -->
+          <article class="about-block">
+            <h3>My Background</h3>
+            <p>[Replace this: briefly describe your educational background.]</p>
+          </article>
+
+          <!-- INTERESTS AND CAREER GOALS: Topics you enjoy (web, AI, games, etc.) and the career you want. -->
+          <article class="about-block">
+            <h3>Interests and Goals</h3>
+            <p>[Replace this: describe your interests and your career goals.]</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SKILLS SECTION
+         - Skills are grouped into 4 categories.
+         - Each skill is one <li class="skill-item"> with an icon and a name.
+         - To ADD a skill: copy one <li>...</li> and paste it inside the <ul>.
+         - To REMOVE a skill: delete its <li>...</li>.
+         - ICON: the <span class="skill-icon"> is a placeholder box.
+           You can replace the "?" with an emoji, a letter, or an <img> tag.
+         - Only list skills you really have.
+         ============================================================ -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+
+          <!-- CATEGORY 1: PROGRAMMING LANGUAGES (e.g. languages you have studied or used) -->
+          <article class="skill-category">
+            <h3>Programming Languages</h3>
+            <ul class="skill-list">
+              <li class="skill-item"><span class="skill-icon">?</span> [Language 1]</li>
+              <li class="skill-item"><span class="skill-icon">?</span> [Language 2]</li>
+              <li class="skill-item"><span class="skill-icon">?</span> [Language 3]</li>
+            </ul>
+          </article>
+
+          <!-- CATEGORY 2: WEB DEVELOPMENT (e.g. front-end or back-end technologies) -->
+          <article class="skill-category">
+            <h3>Web Development</h3>
+            <ul class="skill-list">
+              <li class="skill-item"><span class="skill-icon">?</span> [Web skill 1]</li>
+              <li class="skill-item"><span class="skill-icon">?</span> [Web skill 2]</li>
+              <li class="skill-item"><span class="skill-icon">?</span> [Web skill 3]</li>
+            </ul>
+          </article>
+
+          <!-- CATEGORY 3: DEVELOPMENT TOOLS (e.g. editors, version control, terminals) -->
+          <article class="skill-category">
+            <h3>Development Tools</h3>
+            <ul class="skill-list">
+              <li class="skill-item"><span class="skill-icon">?</span> [Tool 1]</li>
+              <li class="skill-item"><span class="skill-icon">?</span> [Tool 2]</li>
+              <li class="skill-item"><span class="skill-icon">?</span> [Tool 3]</li>
+            </ul>
+          </article>
+
+          <!-- CATEGORY 4: SOFTWARE ENGINEERING CONCEPTS (e.g. topics from your courses) -->
+          <article class="skill-category">
+            <h3>Software Engineering Concepts</h3>
+            <ul class="skill-list">
+              <li class="skill-item"><span class="skill-icon">?</span> [Concept 1]</li>
+              <li class="skill-item"><span class="skill-icon">?</span> [Concept 2]</li>
+              <li class="skill-item"><span class="skill-icon">?</span> [Concept 3]</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         PROJECTS SECTION
+         - Shows the work you are proud of.
+         - There are 3 placeholder cards. Each card has the same structure.
+         - To ADD a project: copy a whole <article class="project-card">...</article>
+           and paste it below the last card.
+         - To REMOVE a project: delete its whole <article>...</article>.
+         ============================================================ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+
+          <!-- PROJECT CARD 1 -->
+          <!-- For each card, replace: the image, project name, description,
+               technologies, GitHub URL, and Live Demo URL. -->
+          <article class="project-card">
+
+            <!-- PROJECT IMAGE: Add a screenshot of your project (e.g. project1.png)
+                 in the same folder. Then delete the placeholder div below and use:
+                 <img src="project1.png" alt="Screenshot of Project Name" class="project-image"> -->
+            <div class="image-placeholder project-placeholder">Project screenshot</div>
+
+            <div class="project-body">
+              <!-- PROJECT NAME -->
+              <h3>[Project Name 1]</h3>
+
+              <!-- SHORT DESCRIPTION: 1-2 sentences about what it does and the problem it solves. -->
+              <p>[Replace this: describe what your project does.]</p>
+
+              <!-- TECHNOLOGIES USED: One <li> per technology. Add or remove as needed. -->
+              <ul class="tech-list">
+                <li>[Tech 1]</li>
+                <li>[Tech 2]</li>
+                <li>[Tech 3]</li>
+              </ul>
+
+              <!-- LINKS: Replace each href="#" with your real URL, for example
+                   https://github.com/your-username/your-repo
+                   If you have NO live demo, delete the "Live Demo" link line. -->
+              <div class="project-links">
+                <a href="#" class="btn btn-small" target="_blank" rel="noopener">GitHub</a>
+                <a href="#" class="btn btn-small btn-secondary" target="_blank" rel="noopener">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT CARD 2 (same structure as card 1: edit the same parts) -->
+          <article class="project-card">
+            <!-- PROJECT IMAGE: replace this placeholder with your screenshot (see card 1). -->
+            <div class="image-placeholder project-placeholder">Project screenshot</div>
+            <div class="project-body">
+              <h3>[Project Name 2]</h3>
+              <p>[Replace this: describe what your project does.]</p>
+              <ul class="tech-list">
+                <li>[Tech 1]</li>
+                <li>[Tech 2]</li>
+                <li>[Tech 3]</li>
+              </ul>
+              <!-- Replace each href="#" with your real GitHub and Live Demo URLs. -->
+              <div class="project-links">
+                <a href="#" class="btn btn-small" target="_blank" rel="noopener">GitHub</a>
+                <a href="#" class="btn btn-small btn-secondary" target="_blank" rel="noopener">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT CARD 3 (same structure as card 1: edit the same parts) -->
+          <article class="project-card">
+            <!-- PROJECT IMAGE: replace this placeholder with your screenshot (see card 1). -->
+            <div class="image-placeholder project-placeholder">Project screenshot</div>
+            <div class="project-body">
+              <h3>[Project Name 3]</h3>
+              <p>[Replace this: describe what your project does.]</p>
+              <ul class="tech-list">
+                <li>[Tech 1]</li>
+                <li>[Tech 2]</li>
+                <li>[Tech 3]</li>
+              </ul>
+              <!-- Replace each href="#" with your real GitHub and Live Demo URLs. -->
+              <div class="project-links">
+                <a href="#" class="btn btn-small" target="_blank" rel="noopener">GitHub</a>
+                <a href="#" class="btn btn-small btn-secondary" target="_blank" rel="noopener">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         EDUCATION SECTION
+         - Your formal education. Replace every bracketed placeholder.
+         - To add another school or degree, copy the whole <article class="education-item">.
+         ============================================================ -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+
+        <article class="education-item">
+          <!-- UNIVERSITY NAME -->
+          <h3>[University Name]</h3>
+          <!-- DEGREE / MAJOR: e.g. your degree type and Software Engineering -->
+          <p class="education-degree">[Degree / Major]</p>
+          <!-- EXPECTED GRADUATION: Write the month and year you expect to graduate. -->
+          <p class="education-date">Expected graduation: [Month Year]</p>
+
+          <!-- RELEVANT COURSES / ACHIEVEMENTS: List real courses you took or honors you earned. -->
+          <h4>Relevant Courses and Achievements</h4>
+          <ul class="education-list">
+            <li>[Course or achievement 1]</li>
+            <li>[Course or achievement 2]</li>
+            <li>[Course or achievement 3]</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         CONTACT SECTION
+         - Tells visitors how to reach you.
+         - Replace each placeholder link with your own details.
+         ============================================================ -->
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <h2 class="section-title">Contact</h2>
+
+        <!-- INVITATION: Write 1-2 friendly sentences inviting people to connect. -->
+        <p class="contact-text">[Replace this: write a short invitation to connect, for example about internships, collaborations, or questions.]</p>
+
+        <ul class="contact-list">
+          <!-- EMAIL: Replace BOTH places: the text shown and the address after "mailto:". -->
+          <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+
+          <!-- GITHUB: Replace "your-username" with your GitHub username. -->
+          <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></li>
+
+          <!-- LINKEDIN: Replace "your-profile" with your LinkedIn profile name. -->
+          <li><a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+       - Shown at the bottom of every visit.
+       - The year is filled in automatically by script.js.
+       - Replace the social links with your own (same ones as Contact).
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <!-- COPYRIGHT + NAME: edit the name if you want. -->
+      <p>&copy; <span id="current-year">2026</span> Ghala Moh. All rights reserved.</p>
+
+      <!-- SOCIAL MEDIA LINKS: Replace the URLs. Add more (e.g. X, Instagram) by copying an <li>. -->
+      <ul class="footer-links">
+        <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Connects the JavaScript file. Keep it at the bottom, and keep script.js in the SAME folder. -->
+  <script src="script.js"></script>
+</body>
+</html>
