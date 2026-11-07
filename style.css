@@ -1,23 +1,13 @@
-/* ==========================================================
-   STYLE.CSS - Styles for the portfolio website
-   Sections in this file (in order):
-   1. Variables (colors, fonts)   2. Base / reset
-   3. Shared components           4. Navigation bar
-   5. Hero   6. About   7. Skills   8. Projects
-   9. Education   10. Contact   11. Footer
-   12. Mobile / responsive styles
-   ========================================================== */
-
 
 /* ---------- 1. VARIABLES ----------
    Change a color here and it updates everywhere on the site. */
 :root {
   --color-bg: #ffffff;          /* main page background */
   --color-bg-alt: #f1f5f9;      /* background of alternate sections */
-  --color-text: #1e293b;        /* main text color */
-  --color-text-muted: #64748b;  /* lighter text color */
-  --color-primary: #0f766e;     /* main accent color (buttons, links) */
-  --color-primary-dark: #115e59;/* accent color when hovering */
+  --color-text: #405576;        /* main text color */
+  --color-text-muted: #8c9cb4;  /* lighter text color */
+  --color-primary: #392f4b;     /* main accent color (buttons, links) */
+  --color-primary-dark: #71547e;/* accent color when hovering */
   --color-border: #cbd5e1;      /* borders and lines */
   --color-placeholder: #e2e8f0; /* gray boxes where images go */
 
@@ -26,6 +16,11 @@
   --radius: 8px;                /* roundness of corners */
 }
 
+/* Heading font: Playfair Display for the name, logo and section titles */
+h1, h2, h3, .logo {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+}
 
 /* ---------- 2. BASE / RESET ----------
    Basic rules applied to the whole page. */
